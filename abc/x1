@@ -1,0 +1,544 @@
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/libDcim_comm ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -- config.c ipc_msg.c ipc_shm.c ipc_sem.c sock_tcp.c sock_udp.c serial.c demonize.c tpcall.c crypto.c trace.c sub_func.c 
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c config.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c ipc_msg.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c ipc_shm.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c ipc_sem.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c sock_tcp.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c sock_udp.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c serial.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c demonize.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c tpcall.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c crypto.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c trace.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -D_REENTRANT -D_GNU_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c sub_func.c
+ar -ruv libDcim_comm.a config.o ipc_msg.o ipc_shm.o ipc_sem.o sock_tcp.o sock_udp.o serial.o demonize.o tpcall.o crypto.o trace.o sub_func.o
+ar: creating libDcim_comm.a
+a - config.o
+a - ipc_msg.o
+a - ipc_shm.o
+a - ipc_sem.o
+a - sock_tcp.o
+a - sock_udp.o
+a - serial.o
+a - demonize.o
+a - tpcall.o
+a - crypto.o
+a - trace.o
+a - sub_func.o
+ctags	--fields=+iaS --extra=+q --language-force=C++ config.c ipc_msg.c ipc_shm.c ipc_sem.c sock_tcp.c sock_udp.c serial.c demonize.c tpcall.c crypto.c trace.c sub_func.c
+cp	libDcim_comm.a	/home/icomer/DCIM/lib/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/libDcim_db ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db `mysql_config --cflags` -D_REENTRANT -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -- dcim_db.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db `mysql_config --cflags` -D_REENTRANT -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c dcim_db.c
+ar -ruv libDcim_db.a dcim_db.o
+ar: creating libDcim_db.a
+a - dcim_db.o
+ctags	--fields=+iaS --extra=+q --language-force=C++ dcim_db.c 
+cp	libDcim_db.a	/home/icomer/DCIM/lib/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/libDcim_odbc ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_odbc -D_REENTRANT -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -- dcim_odbc.c
+g++ -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_odbc -D_REENTRANT -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a -c dcim_odbc.c
+ar -ruv libDcim_odbc.a dcim_odbc.o
+ar: creating libDcim_odbc.a
+a - dcim_odbc.o
+ctags	--fields=+iaS --extra=+q --language-force=C++ dcim_odbc.c 
+cp	libDcim_odbc.a	/home/icomer/DCIM/lib/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/libDcim_zmsg ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -D_REENTRANT -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a  -- dcim_zmsg.c dcim_zip.c
+g++ -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -D_REENTRANT -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a  -c dcim_zmsg.c
+g++ -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -D_REENTRANT -D_POSIX_PTHREAD_SEMANTICS -D_XOPEN_SOURCE_EXTENDED  -Wall -m64 -g -D_DEBUG -std=c++2a  -c dcim_zip.c
+ar -ruv libDcim_zmsg.a dcim_zmsg.o dcim_zip.o 
+ar: creating libDcim_zmsg.a
+a - dcim_zmsg.o
+a - dcim_zip.o
+ctags	--fields=+iaS --extra=+q --language-force=C++ dcim_zmsg.c dcim_zip.c 
+cp	libDcim_zmsg.a	/home/icomer/DCIM/lib/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/procMgr ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- procMgr_main.c procMgr_signal.c procMgr_init.c procMgr_thr.c  
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c procMgr_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c procMgr_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c procMgr_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c procMgr_thr.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o procMgr procMgr_main.o procMgr_signal.o procMgr_init.o procMgr_thr.o -lpthread -lm -lDcim_comm -ldl
+ctags  --fields=+iaS --extra=+q --language-force=C++ procMgr_main.c procMgr_signal.c procMgr_init.c procMgr_thr.c  *.h
+cp procMgr /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/RTMD ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- rtmd_main.c rtmd_signal.c rtmd_init.c rtmd_route.c  
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c rtmd_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c rtmd_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c rtmd_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c rtmd_route.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o rtmd rtmd_main.o rtmd_signal.o rtmd_init.o rtmd_route.o -lpthread -lDcim_comm -lm -ldl
+ctags	--fields=+iaS --extra=+q --language-force=C++ rtmd_main.c rtmd_signal.c rtmd_init.c rtmd_route.c  *.h
+cp rtmd /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/FAPD ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- fapd_main.c fapd_signal.c fapd_init.c fapd_reload.c fapd_status.c fapd_stats.c fapd_queue.c fapd_alarm.c fapd_msg.c fapd_db.c fapd_util.c 
+make[1]: 디렉터리 '/home/icomer/DCIM/src/FAPD/FAPD_L' 들어감
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -- fapd_main.c fapd_signal.c fapd_init.c fapd_reload.c fapd_status.c fapd_stats.c fapd_queue.c fapd_alarm.c fapd_msg.c fapd_db.c fapd_util.c 
+make[1]: 디렉터리 '/home/icomer/DCIM/src/FAPD/FAPD_L' 나감
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_alarm.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_db.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_util.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o fapd fapd_main.o fapd_signal.o fapd_init.o fapd_reload.o fapd_status.o fapd_stats.o fapd_queue.o fapd_alarm.o fapd_msg.o fapd_db.o fapd_util.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ fapd_main.c fapd_signal.c fapd_init.c fapd_reload.c fapd_status.c fapd_stats.c fapd_queue.c fapd_alarm.c fapd_msg.c fapd_db.c fapd_util.c *.h
+make[1]: 디렉터리 '/home/icomer/DCIM/src/FAPD/FAPD_L' 들어감
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_alarm.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_db.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c fapd_util.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -o fapd_L fapd_main.o fapd_signal.o fapd_init.o fapd_reload.o fapd_status.o fapd_stats.o fapd_queue.o fapd_alarm.o fapd_msg.o fapd_db.o fapd_util.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ fapd_main.c fapd_signal.c fapd_init.c fapd_reload.c fapd_status.c fapd_stats.c fapd_queue.c fapd_alarm.c fapd_msg.c fapd_db.c fapd_util.c *.h
+make[1]: 디렉터리 '/home/icomer/DCIM/src/FAPD/FAPD_L' 나감
+cp fapd /home/icomer/DCIM/bin/.
+make[1]: 디렉터리 '/home/icomer/DCIM/src/FAPD/FAPD_L' 들어감
+cp fapd_L /home/icomer/DCIM/bin/.
+make[1]: 디렉터리 '/home/icomer/DCIM/src/FAPD/FAPD_L' 나감
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/STPD ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- stpd_main.c stpd_signal.c stpd_init.c stpd_queue.c stpd_msg.c stpd_stats.c stpd_util.c stpd_db.c 
+make[1]: 디렉터리 '/home/icomer/DCIM/src/STPD/STPD_L' 들어감
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -- stpd_main.c stpd_signal.c stpd_init.c stpd_queue.c stpd_msg.c stpd_stats.c stpd_util.c stpd_db.c 
+make[1]: 디렉터리 '/home/icomer/DCIM/src/STPD/STPD_L' 나감
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_util.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o stpd stpd_main.o stpd_signal.o stpd_init.o stpd_queue.o stpd_msg.o stpd_stats.o stpd_util.o stpd_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ stpd_main.c stpd_signal.c stpd_init.c stpd_queue.c stpd_msg.c stpd_stats.c stpd_util.c stpd_db.c *.h
+make[1]: 디렉터리 '/home/icomer/DCIM/src/STPD/STPD_L' 들어감
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_util.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c stpd_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -o stpd_L stpd_main.o stpd_signal.o stpd_init.o stpd_queue.o stpd_msg.o stpd_stats.o stpd_util.o stpd_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ stpd_main.c stpd_signal.c stpd_init.c stpd_queue.c stpd_msg.c stpd_stats.c stpd_util.c stpd_db.c *.h
+make[1]: 디렉터리 '/home/icomer/DCIM/src/STPD/STPD_L' 나감
+cp stpd /home/icomer/DCIM/bin/.
+make[1]: 디렉터리 '/home/icomer/DCIM/src/STPD/STPD_L' 들어감
+cp stpd_L /home/icomer/DCIM/bin/.
+make[1]: 디렉터리 '/home/icomer/DCIM/src/STPD/STPD_L' 나감
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/SYMD ]
+-----------------------------------------------------------------------------
+gccmakedep -- -g -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- symd_main.c symd_signal.c symd_init.c symd_queue.c symd_sysinfo.c symd_msg.c symd_stats.c 
+g++ -g -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c symd_main.c
+g++ -g -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c symd_signal.c
+g++ -g -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c symd_init.c
+g++ -g -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c symd_queue.c
+g++ -g -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c symd_sysinfo.c
+g++ -g -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c symd_msg.c
+g++ -g -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c symd_stats.c
+g++ -L. -L/home/icomer/DCIM/lib  -g -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o symd symd_main.o symd_signal.o symd_init.o symd_queue.o symd_sysinfo.o symd_msg.o symd_stats.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ symd_main.c symd_signal.c symd_init.c symd_queue.c symd_sysinfo.c symd_msg.c symd_stats.c *.h
+cp symd /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/UIPD ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- uipd_main.c uipd_signal.c uipd_init.c uipd_queue.c uipd_web.c uipd_msg.c uipd_db.c 
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c uipd_main.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c uipd_signal.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c uipd_init.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c uipd_queue.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c uipd_web.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c uipd_msg.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c uipd_db.c
+g++ -L. -L/usr/local/lib64 -L/home/icomer/DCIM/lib  -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o uipd uipd_main.o uipd_signal.o uipd_init.o uipd_queue.o uipd_web.o uipd_msg.o uipd_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lwebsockets -ljson-c -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ uipd_main.c uipd_signal.c uipd_init.c uipd_queue.c uipd_web.c uipd_msg.c uipd_db.c *.h
+cp uipd /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/ENPD ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- enpd_main.c enpd_signal.c enpd_init.c enpd_queue.c enpd_email.c enpd_smsmodem.c enpd_smsdbms.c enpd_db.c 
+g++ -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c enpd_main.c
+g++ -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c enpd_signal.c
+g++ -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c enpd_init.c
+g++ -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c enpd_queue.c
+g++ -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c enpd_email.c
+g++ -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c enpd_smsmodem.c
+g++ -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c enpd_smsdbms.c
+g++ -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c enpd_db.c
+g++ -L. -L/usr/local/lib -L/home/icomer/DCIM/lib -I. -I/usr/local/include -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o enpd enpd_main.o enpd_signal.o enpd_init.o enpd_queue.o enpd_email.o enpd_smsmodem.o enpd_smsdbms.o enpd_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs` `curl-config --libs` 
+ctags	--fields=+iaS --extra=+q --language-force=C++ enpd_main.c enpd_signal.c enpd_init.c enpd_queue.c enpd_email.c enpd_smsmodem.c enpd_smsdbms.c enpd_db.c *.h
+sudo cp enpd /home/icomer/DCIM/bin/.
+sudo chown root /home/icomer/DCIM/bin/enpd
+sudo chmod 6755 /home/icomer/DCIM/bin/enpd
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/CMPD ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- cmpd_main.c cmpd_signal.c cmpd_init.c cmpd_queue.c cmpd_msg.c cmpd_ctrl.c cmpd_db.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c cmpd_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c cmpd_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c cmpd_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c cmpd_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c cmpd_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c cmpd_ctrl.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c cmpd_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o cmpd cmpd_main.o cmpd_signal.o cmpd_init.o cmpd_queue.o cmpd_msg.o cmpd_ctrl.o cmpd_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ cmpd_main.c cmpd_signal.c cmpd_init.c cmpd_queue.c cmpd_msg.c cmpd_ctrl.c cmpd_db.c *.h
+cp cmpd /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/MODBID ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- modbid_main.c modbid_signal.c modbid_init.c modbid_sock.c modbid_modbus.c modbid_queue.c modbid_status.c modbid_stats.c modbid_msg.c modbid_reload.c modbid_util.c modbid_db.c
+make[1]: 디렉터리 '/home/icomer/DCIM/src/MODBID/MODBID_L' 들어감
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -- modbid_main.c modbid_signal.c modbid_init.c modbid_sock.c modbid_modbus.c modbid_queue.c modbid_status.c modbid_stats.c modbid_msg.c modbid_reload.c modbid_util.c modbid_db.c
+make[1]: 디렉터리 '/home/icomer/DCIM/src/MODBID/MODBID_L' 나감
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_sock.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_modbus.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_util.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o modbid modbid_main.o modbid_signal.o modbid_init.o modbid_sock.o modbid_modbus.o modbid_queue.o modbid_status.o modbid_stats.o modbid_msg.o modbid_reload.o modbid_util.o modbid_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags 	--fields=+iaS --extra=+q --language-force=C++ modbid_main.c modbid_signal.c modbid_init.c modbid_sock.c modbid_modbus.c modbid_queue.c modbid_status.c modbid_stats.c modbid_msg.c modbid_reload.c modbid_util.c modbid_db.c *.h
+make[1]: 디렉터리 '/home/icomer/DCIM/src/MODBID/MODBID_L' 들어감
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_sock.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_modbus.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_util.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -c modbid_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE -D_LARGE_SENSOR_  -Wall -m64 -g -D_DEBUG -std=c++2a -o modbid_L modbid_main.o modbid_signal.o modbid_init.o modbid_sock.o modbid_modbus.o modbid_queue.o modbid_status.o modbid_stats.o modbid_msg.o modbid_reload.o modbid_util.o modbid_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz `mysql_config --libs` -lcrypto
+ctags	--fields=+iaS --extra=+q --language-force=C++ modbid_main.c modbid_signal.c modbid_init.c modbid_sock.c modbid_modbus.c modbid_queue.c modbid_status.c modbid_stats.c modbid_msg.c modbid_reload.c modbid_util.c modbid_db.c *.h
+make[1]: 디렉터리 '/home/icomer/DCIM/src/MODBID/MODBID_L' 나감
+cp modbid /home/icomer/DCIM/bin/modbid0
+cp modbid /home/icomer/DCIM/bin/modbid1
+cp modbid /home/icomer/DCIM/bin/modbid2
+cp modbid /home/icomer/DCIM/bin/modbid3
+cp modbid /home/icomer/DCIM/bin/modbid4
+make[1]: 디렉터리 '/home/icomer/DCIM/src/MODBID/MODBID_L' 들어감
+cp modbid_L /home/icomer/DCIM/bin/modbid_L0
+cp modbid_L /home/icomer/DCIM/bin/modbid_L1
+cp modbid_L /home/icomer/DCIM/bin/modbid_L2
+cp modbid_L /home/icomer/DCIM/bin/modbid_L3
+cp modbid_L /home/icomer/DCIM/bin/modbid_L4
+make[1]: 디렉터리 '/home/icomer/DCIM/src/MODBID/MODBID_L' 나감
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/MODBID/simMB ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- simMB_main.c simMB_signal.c simMB_init.c simMB_client.c simMB_modbus.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simMB_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simMB_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simMB_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simMB_client.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simMB_modbus.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o simMB simMB_main.o simMB_signal.o simMB_init.o simMB_client.o simMB_modbus.o -lpthread -lm -lDcim_comm -ldl
+ctags	--fields=+iaS --extra=+q --language-force=C++ simMB_main.c simMB_signal.c simMB_init.c simMB_client.c simMB_modbus.c *.h
+cp simMB /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/TCPID ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- tcpid_main.c tcpid_signal.c tcpid_init.c tcpid_sock.c tcpid_protocol.c tcpid_queue.c tcpid_status.c tcpid_stats.c tcpid_msg.c tcpid_reload.c tcpid_util.c tcpid_db.c tcpid_test_aircorn.c tcpid_i7051d.c tcpid_ar_195B.c tcpid_ar_56B.c		 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_sock.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_protocol.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_util.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_db.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_test_aircorn.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_i7051d.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_ar_195B.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c tcpid_ar_56B.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o tcpid tcpid_main.o tcpid_signal.o tcpid_init.o tcpid_sock.o tcpid_protocol.o tcpid_queue.o tcpid_status.o tcpid_stats.o tcpid_msg.o tcpid_reload.o tcpid_util.o tcpid_db.o tcpid_test_aircorn.o tcpid_i7051d.o tcpid_ar_195B.o tcpid_ar_56B.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ tcpid_main.c tcpid_signal.c tcpid_init.c tcpid_sock.c tcpid_protocol.c tcpid_queue.c tcpid_status.c tcpid_stats.c tcpid_msg.c tcpid_reload.c tcpid_util.c tcpid_db.c tcpid_test_aircorn.c tcpid_i7051d.c tcpid_ar_195B.c tcpid_ar_56B.c		 *.h
+cp tcpid /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/TCPID/simTCP ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -- simTCP_main.c simTCP_signal.c simTCP_init.c simTCP_client.c simTCP_test_aircorn.c simTCP_i7051d.c simTCP_ar_56B.c simTCP_ar_195B.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -c simTCP_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -c simTCP_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -c simTCP_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -c simTCP_client.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -c simTCP_test_aircorn.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -c simTCP_i7051d.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -c simTCP_ar_56B.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -c simTCP_ar_195B.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE   -Wall -m64 -g -D_DEBUG -std=c++2a -o simTCP simTCP_main.o simTCP_signal.o simTCP_init.o simTCP_client.o simTCP_test_aircorn.o simTCP_i7051d.o simTCP_ar_56B.o simTCP_ar_195B.o -lpthread -lm -lDcim_comm -ldl
+ctags	--fields=+iaS --extra=+q --language-force=C++ simTCP_main.c simTCP_signal.c simTCP_init.c simTCP_client.c simTCP_test_aircorn.c simTCP_i7051d.c simTCP_ar_56B.c simTCP_ar_195B.c *.h
+cp simTCP /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/SNMPID ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- snmpid_main.c snmpid_signal.c snmpid_init.c snmpid_queue.c snmpid_snmp.c snmpid_reload.c snmpid_status.c snmpid_stats.c snmpid_msg.c snmpid_db.c snmpid_util.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_snmp.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_db.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c snmpid_util.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `net-snmp-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o snmpid snmpid_main.o snmpid_signal.o snmpid_init.o snmpid_queue.o snmpid_snmp.o snmpid_reload.o snmpid_status.o snmpid_stats.o snmpid_msg.o snmpid_db.o snmpid_util.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs` `net-snmp-config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ snmpid_main.c snmpid_signal.c snmpid_init.c snmpid_queue.c snmpid_snmp.c snmpid_reload.c snmpid_status.c snmpid_stats.c snmpid_msg.c snmpid_db.c snmpid_util.c *.h
+cp snmpid /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/ODBCID ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- odbcid_main.c odbcid_signal.c odbcid_init.c odbcid_asset.c odbcid_queue.c odbcid_status.c odbcid_stats.c odbcid_msg.c odbcid_reload.c odbcid_util.c odbcid_db.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_asset.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_util.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c odbcid_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/inc/libDcim_odbc `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o odbcid odbcid_main.o odbcid_signal.o odbcid_init.o odbcid_asset.o odbcid_queue.o odbcid_status.o odbcid_stats.o odbcid_msg.o odbcid_reload.o odbcid_util.o odbcid_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lDcim_odbc -lz -lodbc -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ odbcid_main.c odbcid_signal.c odbcid_init.c odbcid_asset.c odbcid_queue.c odbcid_status.c odbcid_stats.c odbcid_msg.c odbcid_reload.c odbcid_util.c odbcid_db.c *.h
+cp odbcid /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/BACNID ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- bacnid_main.c bacnid_signal.c bacnid_init.c bacnid_queue.c bacnid_bacnet.c bacnid_reload.c bacnid_status.c bacnid_stats.c bacnid_msg.c bacnid_db.c bacnid_util.c bacnid_peerdown.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_bacnet.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_db.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_util.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c bacnid_peerdown.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg -I/home/icomer/DCIM/src/BACNID/bacnet-stack-1.0.0/src/bacnet `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o bacnid bacnid_main.o bacnid_signal.o bacnid_init.o bacnid_queue.o bacnid_bacnet.o bacnid_reload.o bacnid_status.o bacnid_stats.o bacnid_msg.o bacnid_db.o bacnid_util.o bacnid_peerdown.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ bacnid_main.c bacnid_signal.c bacnid_init.c bacnid_queue.c bacnid_bacnet.c bacnid_reload.c bacnid_status.c bacnid_stats.c bacnid_msg.c bacnid_db.c bacnid_util.c bacnid_peerdown.c *.h
+cp bacnid /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/OPCID ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- opcid_main.c opcid_signal.c opcid_init.c opcid_queue.c opcid_asset.c opcid_status.c opcid_stats.c opcid_msg.c opcid_reload.c opcid_opcua.c opcid_db.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_asset.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_opcua.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c opcid_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o opcid opcid_main.o opcid_signal.o opcid_init.o opcid_queue.o opcid_asset.o opcid_status.o opcid_stats.o opcid_msg.o opcid_reload.o opcid_opcua.o opcid_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lopen62541 -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ opcid_main.c opcid_signal.c opcid_init.c opcid_queue.c opcid_asset.c opcid_status.c opcid_stats.c opcid_msg.c opcid_reload.c opcid_opcua.c opcid_db.c *.h
+cp opcid /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/PSCID ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- pscid_main.c pscid_signal.c pscid_init.c pscid_asset.c pscid_queue.c pscid_reload.c pscid_status.c pscid_stats.c pscid_msg.c pscid_db.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_asset.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c pscid_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o pscid pscid_main.o pscid_signal.o pscid_init.o pscid_asset.o pscid_queue.o pscid_reload.o pscid_status.o pscid_stats.o pscid_msg.o pscid_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs` `curl-config --libs` 
+ctags	--fields=+iaS --extra=+q --language-force=C++ pscid_main.c pscid_signal.c pscid_init.c pscid_asset.c pscid_queue.c pscid_reload.c pscid_status.c pscid_stats.c pscid_msg.c pscid_db.c *.h
+cp pscid /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/HTTPID ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- httpid_main.c httpid_signal.c httpid_init.c httpid_asset.c httpid_json.c httpid_xml.c httpid_queue.c httpid_reload.c httpid_status.c httpid_stats.c httpid_msg.c httpid_db.c 
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_main.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_signal.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_init.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_asset.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_json.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_xml.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_queue.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_reload.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_status.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_stats.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_msg.c
+g++ -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c httpid_db.c
+g++ -L. -L/usr/lib64 -L/home/icomer/DCIM/lib  -I. -I/usr/local/include -I/usr/local/include/json-c -I/usr/include/json-c -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` `curl-config --cflags` `xml2-config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o httpid httpid_main.o httpid_signal.o httpid_init.o httpid_asset.o httpid_json.o httpid_xml.o httpid_queue.o httpid_reload.o httpid_status.o httpid_stats.o httpid_msg.o httpid_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -ljson-c -lcrypto `mysql_config --libs` `curl-config --libs` `xml2-config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ httpid_main.c httpid_signal.c httpid_init.c httpid_asset.c httpid_json.c httpid_xml.c httpid_queue.c httpid_reload.c httpid_status.c httpid_stats.c httpid_msg.c httpid_db.c *.h
+cp httpid /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/HTTPID/simHTTP ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/usr/local/include/json-c -I/usr/include/json-c `xml2-config --cflags` -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- simHTTP_main.c simHTTP_signal.c simHTTP_init.c simHTTP_client.c simHTTP_model.c simHTTP_xml.c 
+g++ -I. -I/usr/local/include/json-c -I/usr/include/json-c `xml2-config --cflags` -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simHTTP_main.c
+g++ -I. -I/usr/local/include/json-c -I/usr/include/json-c `xml2-config --cflags` -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simHTTP_signal.c
+g++ -I. -I/usr/local/include/json-c -I/usr/include/json-c `xml2-config --cflags` -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simHTTP_init.c
+g++ -I. -I/usr/local/include/json-c -I/usr/include/json-c `xml2-config --cflags` -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simHTTP_client.c
+g++ -I. -I/usr/local/include/json-c -I/usr/include/json-c `xml2-config --cflags` -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simHTTP_model.c
+g++ -I. -I/usr/local/include/json-c -I/usr/include/json-c `xml2-config --cflags` -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simHTTP_xml.c
+g++ -L. -L/home/icomer/DCIM/lib `xml2-config --libs` -I. -I/usr/local/include/json-c -I/usr/include/json-c `xml2-config --cflags` -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o simHTTP simHTTP_main.o simHTTP_signal.o simHTTP_init.o simHTTP_client.o simHTTP_model.o simHTTP_xml.o -lpthread -lDcim_comm -ljson-c
+ctags	--fields=+iaS --extra=+q --language-force=C++ simHTTP_main.c simHTTP_signal.c simHTTP_init.c simHTTP_client.c simHTTP_model.c simHTTP_xml.c
+cp simHTTP /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/VIRID ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- virid_main.c virid_signal.c virid_init.c virid_asset.c virid_rAsset.c virid_rSensor.c virid_queue.c virid_status.c virid_stats.c virid_msg.c virid_reload.c virid_db.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_asset.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_rAsset.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_rSensor.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_queue.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_status.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_stats.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_reload.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c virid_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o virid virid_main.o virid_signal.o virid_init.o virid_asset.o virid_rAsset.o virid_rSensor.o virid_queue.o virid_status.o virid_stats.o virid_msg.o virid_reload.o virid_db.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lc -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ virid_main.c virid_signal.c virid_init.c virid_asset.c virid_rAsset.c virid_rSensor.c virid_queue.c virid_status.c virid_stats.c virid_msg.c virid_reload.c virid_db.c *.h
+cp virid /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/ETC/chgLogLevel ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- chgLog_main.c chgLog_init.c chgLog_proc.c chgLog_sub.c  
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c chgLog_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c chgLog_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c chgLog_proc.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c chgLog_sub.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o chgLogLevel chgLog_main.o chgLog_init.o chgLog_proc.o chgLog_sub.o -lpthread -lm -lDcim_comm -lDcim_zmsg -lz -ldl
+ctags	--fields=+iaS --extra=+q --language-force=C++ chgLog_main.c chgLog_init.c chgLog_proc.c chgLog_sub.c  *.h
+cp chgLogLevel /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/ETC/dcimAdmTool ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- admTool_main.c admTool_init.c admTool_dbms.c admTool_dashsvr.c admTool_websvr.c admTool_apisvr.c admTool_procMgr.c admTool_fapd.c admTool_summary.c admTool_sub.c  
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_dbms.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_dashsvr.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_websvr.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_apisvr.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_procMgr.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_fapd.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_summary.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c admTool_sub.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o dcimAdmTool admTool_main.o admTool_init.o admTool_dbms.o admTool_dashsvr.o admTool_websvr.o admTool_apisvr.o admTool_procMgr.o admTool_fapd.o admTool_summary.o admTool_sub.o -lpthread -lm -lDcim_comm -ldl
+ctags	--fields=+iaS --extra=+q --language-force=C++ admTool_main.c admTool_init.c admTool_dbms.c admTool_dashsvr.c admTool_websvr.c admTool_apisvr.c admTool_procMgr.c admTool_fapd.c admTool_summary.c admTool_sub.c  *.h
+cp dcimAdmTool /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/ETC/getAssetInfo ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- getAsset_main.c getAsset_init.c getAsset_db.c  
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c getAsset_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c getAsset_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c getAsset_db.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o getAssetInfo getAsset_main.o getAsset_init.o getAsset_db.o -lpthread -lm -lDcim_comm -lDcim_db `mysql_config --libs` -lcrypto
+ctags	--fields=+iaS --extra=+q --language-force=C++ getAsset_main.c getAsset_init.c getAsset_db.c  *.h
+cp getAssetInfo /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/ETC/simMgr ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- simMgr_main.c simMgr_signal.c simMgr_init.c simMgr_thr.c  
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simMgr_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simMgr_signal.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simMgr_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c simMgr_thr.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o simMgr simMgr_main.o simMgr_signal.o simMgr_init.o simMgr_thr.o -lpthread -lm -ldl -lDcim_comm 
+ctags   --fields=+iaS --extra=+q --language-force=C++ simMgr_main.c simMgr_signal.c simMgr_init.c simMgr_thr.c  *.h
+cp simMgr /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/ETC/trapMsg ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- trapMsg_main.c trapMsg_init.c trapMsg_msg.c trapMsg_util.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c trapMsg_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c trapMsg_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c trapMsg_msg.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c trapMsg_util.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_zmsg -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o trapMsg trapMsg_main.o trapMsg_init.o trapMsg_msg.o trapMsg_util.o -lpthread -lm -lDcim_comm -lDcim_zmsg -lz -ldl
+ctags	--fields=+iaS --extra=+q --language-force=C++ trapMsg_main.c trapMsg_init.c trapMsg_msg.c trapMsg_util.c *.h
+cp trapMsg /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ /home/icomer/DCIM/src/ETC/wrapStats ]
+-----------------------------------------------------------------------------
+gccmakedep -- -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -- wrapStats_main.c wrapStats_init.c wrapStats_stat.c wrapStats_db.c wrapStats_util.c 
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c wrapStats_main.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c wrapStats_init.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c wrapStats_stat.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c wrapStats_db.c
+g++ -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -c wrapStats_util.c
+g++ -L. -L/home/icomer/DCIM/lib  -I. -I/home/icomer/DCIM/inc -I/home/icomer/DCIM/inc/libDcim_comm -I/home/icomer/DCIM/inc/libDcim_db -I/home/icomer/DCIM/inc/libDcim_zmsg `mysql_config --cflags` -O -D_REENTRANT -D_GNU_SOURCE  -Wall -m64 -g -D_DEBUG -std=c++2a -o wrapStats wrapStats_main.o wrapStats_init.o wrapStats_stat.o wrapStats_db.o wrapStats_util.o -lpthread -lm -lDcim_comm -lDcim_db -lDcim_zmsg -lz -lcrypto `mysql_config --libs`
+ctags	--fields=+iaS --extra=+q --language-force=C++ wrapStats_main.c wrapStats_init.c wrapStats_stat.c wrapStats_db.c wrapStats_util.c *.h
+cp wrapStats /home/icomer/DCIM/bin/.
+-----------------------------------------------------------------------------
+[ Header Ctag - /home/icomer/DCIM/inc/libDcim_comm ]
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+[ Header Ctag - /home/icomer/DCIM/inc/libDcim_db ]
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+[ Header Ctag - /home/icomer/DCIM/inc/libDcim_zmsg ]
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+[ Header Ctag - /home/icomer/DCIM/inc/libDcim_odbc ]
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+[ Header Ctag - /home/icomer/DCIM/inc ]
+-----------------------------------------------------------------------------
