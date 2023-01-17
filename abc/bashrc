@@ -1,0 +1,33 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
+### PS1 Configuration ###
+BLACK=$(tput setaf 0)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+LIME_YELLOW=$(tput setaf 190)
+YELLOW=$(tput setaf 3)
+POWDER_BLUE=$(tput setaf 153)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+BRIGHT=$(tput bold)
+NORMAL=$(tput sgr0)
+BLINK=$(tput blink)
+REVERSE=$(tput smso)
+UNDERLINE=$(tput smul)
+
+#export PS1="\[${NORMAL}\][ \[${RED}\]\h\[${NORMAL}\](\[${GREEN}\]\u\[${NORMAL}\]):\[${YELLOW}\]\! \[$MAGENTA\]\w\[${NORMAL}\]]\[${NORMAL}\]$ "
+export PS1="\[${NORMAL}\][ \[${MAGENTA}\]\h\[${NORMAL}\](\[${GREEN}\]\u\[${NORMAL}\]):\[${YELLOW}\]\! \[$CYAN\]\w\[${NORMAL}\] ] "
+### END: PS1 ###
+
